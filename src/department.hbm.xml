@@ -2,10 +2,10 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="main.Department" table="DEPARTMENT" >
+    <class name="Department" table="DEPARTMENT" >
         <id name="id" type="int">
             <column name="id" />
-            <generator class="identity" />
+            <generator class="assigned" />
         </id>
         <property name="name" type="string">
             <column name="name" />
